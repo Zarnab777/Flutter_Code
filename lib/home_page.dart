@@ -10,7 +10,11 @@ class Homepage extends StatelessWidget {
     String name = "For Project";
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text("Catalog App",
+            style: TextStyle(
+              color: Colors.black,
+              
+            )),
       ),
       body: Center(
         child: Container(

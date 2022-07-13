@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
         "https://cdn.3dnames.co/previews/ps28/250x250/z/ps28zarnab3dxx.jpg";
     return Drawer(
       child: Container(
-        color: Colors.lightBlue,
+        color: Colors.blue,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
