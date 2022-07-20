@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_001/home_widgets/catalog_header.dart';
 import 'package:flutter_application_001/home_widgets/catalog_list.dart';
 import 'package:flutter_application_001/models/catalog.dart';
+import 'package:flutter_application_001/utils/routes.dart';
 //import 'package:flutter_application_001/widgets/drawer.dart';
 //import 'package:flutter_application_001/widgets/item_widget.dart';
 import 'package:flutter_application_001/widgets/themes.dart';
@@ -42,6 +43,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: MyTheme.creamColor,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () => Navigator.pushNamed(context, Myroutes.cartRoute),
+          backgroundColor: MyTheme.darkBluishColor,
+          child: Icon(IconData(0xe59c, fontFamily: 'MaterialIcons')),
+        ),
         body: SafeArea(
           child: Container(
             padding: Vx.m32,
@@ -59,5 +65,3 @@ class _HomePageState extends State<HomePage> {
         ));
   }
 }
-
-

@@ -18,7 +18,7 @@ class CatalogList extends StatelessWidget {
             onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>HomeDetailPage(
+                    builder: (context) => HomeDetailPage(
                           catalog: catalog,
                         ))),
             child: CatalogItem(catalog: catalog));
@@ -67,7 +67,7 @@ class CatalogItem extends StatelessWidget {
                         shape: MaterialStateProperty.all(
                           StadiumBorder(),
                         )),
-                    child: "Buy".text.make(),
+                    child: "Add to Cart".text.make(),
                   )
                 ],
               ).pOnly(right: 8.0)
